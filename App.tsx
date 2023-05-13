@@ -19,7 +19,7 @@ import {
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
-import { ProductScreen } from './src/screen';
+import { ProductScreen, ProductDetailsScreen } from './src/screen';
 
 
 
@@ -32,7 +32,8 @@ function App(): JSX.Element {
 
   return (
     <SafeAreaView style={styles.sectionContainer}>
-      <ProductScreen />
+      {/* <ProductScreen /> */}
+      <ProductDetailsScreen />
     </SafeAreaView>
   );
 }
@@ -41,8 +42,6 @@ const styles = StyleSheet.create({
   sectionContainer: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
 
